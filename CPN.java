@@ -14,7 +14,7 @@ class CPN {
         System.out.println("Enter Test Marks:");
         Obtained_EntryTestMarks = inputFromConsole.nextInt();
 
-        CPN_Result = (Matric_Percentage * 0.10) + (Intermediate_Percentage * 0.30) + (Obtained_EntryTestMarks * 0.60);
+        CPN_Result = (Matric_Percentage * 0.1) + (Intermediate_Percentage * 0.3) + (Obtained_EntryTestMarks * 0.6);
 
         System.out.println("Cpn is:" + (CPN_Result));
 
