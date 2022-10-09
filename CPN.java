@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class CPN {
-    public static void main() {
+    public static void main(String[] args) {
         double Matric_Percentage = 0, Intermediate_Percentage = 0, CPN_Result;
         int Obtained_EntryTestMarks;
         Scanner inputFromConsole = new Scanner(System.in);
