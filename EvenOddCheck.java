@@ -9,7 +9,7 @@ class EvenOddCheck {
         
         EvenOddCheck checker = new EvenOddCheck();
                 
-        String result = checker.isEvenOrOdd(num(num);
+        String result = checker.isEvenOrOdd(num);
         System.out.println(result);
         
         
