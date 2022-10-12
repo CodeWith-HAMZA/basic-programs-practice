@@ -1,23 +1,24 @@
+
 import java.util.Scanner;
 
 class CPN {
+
     public static void main(String[] args) {
-        double Matric_Percentage = 0, Intermediate_Percentage = 0, CPN_Result;
-        int Obtained_EntryTestMarks;
-        Scanner inputFromConsole = new Scanner(System.in);
-        System.out.println("Your 10th [Matric-Marks] %: ");
-        Matric_Percentage = inputFromConsole.nextDouble();
-
-        System.out.println("Your 12th [Intermediate-Marks] %: ");
-        Intermediate_Percentage = inputFromConsole.nextDouble();
-
-        System.out.println("Enter Test Marks:");
-        Obtained_EntryTestMarks = inputFromConsole.nextInt();
-
-        CPN_Result = (Matric_Percentage * 0.1) + (Intermediate_Percentage * 0.3) + (Obtained_EntryTestMarks * 0.6);
-
-        System.out.println("Cpn is:" + (CPN_Result));
-
-        return;
+        Scanner inputObject = new Scanner(System.in);
+        String[][] Arr = { { "Enter You Matric Marks:> ", "850", "" }, { "Enter You InterMediate Marks:> ", "1100", "" }, { "Enter You Entry-Test Marks:> ", "100", "" } };
+        
+        for (int i = 0; i < Arr.length; i++) {
+            Out(Arr[i][0]);
+            Arr[i][2] = String.valueOf(RatioOfObtainedTotal(inputObject.nextDouble(), Double.parseDouble(Arr[i][1])));
+        }
+        double Resultant_CPN = Double.parseDouble(Arr[0][2]) * 10 + Double.parseDouble(Arr[1][2]) * 30 + Double.parseDouble(Arr[2][2]) * 60;
+        Out("Your Total CPN:> " + String.valueOf(Resultant_CPN));
     }
+    static void Out(String _givenStr) {
+        System.out.println(_givenStr);
+    }
+    static double RatioOfObtainedTotal(double ObtainedMarks, double totalMarks) {
+        return (ObtainedMarks / totalMarks);
+    }
+
 }
