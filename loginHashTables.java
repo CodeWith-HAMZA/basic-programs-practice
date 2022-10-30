@@ -46,6 +46,6 @@ public class loginHashTables {
             System.out.println("Welcome!\n" + '\'' + dbEmail + "\': Successfully, Login ^_^");
         }
         if (!isExist)
-            System.out.println('\'' + email + '\'' + ", Account Doesn't Exist :| ");
+            System.out.println('\'' + email + '\'' + ", Account Doesn't Exist -_- ");
     }
 }
