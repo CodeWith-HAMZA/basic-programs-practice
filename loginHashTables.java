@@ -6,7 +6,7 @@ import java.util.Scanner;
   
 import java.nio.*;
 
-public class Main {
+public class loginHashTables {
     public static void main(String[] args) {
       
       Hashtable<String, String> Accounts = new Hashtable<>();
