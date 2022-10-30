@@ -40,12 +40,12 @@ public class loginHashTables {
             isExist = true;
 
             if (!dbPassword.equals(pass)) {
-                System.out.println('\'' + dbEmail + '\'' + ": Incorrect Passoword For ");
+                System.out.println('\'' + dbEmail + '\'' + ": Incorrect Passoword :( Try Again! ");
                 break;
             }
-            System.out.println("Welcome!\n" + '\'' + dbEmail + "\': Successfully, Login :)");
+            System.out.println("Welcome!\n" + '\'' + dbEmail + "\': Successfully, Login ^_^");
         }
         if (!isExist)
-            System.out.println('\'' + email + '\'' + ", Account Doesn't Exist");
+            System.out.println('\'' + email + '\'' + ", Account Doesn't Exist :| ");
     }
 }
