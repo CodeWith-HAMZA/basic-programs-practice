@@ -1,0 +1,13 @@
+class task7{
+      public static void main(String[]args){
+      System.out.println("Demo \n This is BackSlash n to Start New-Line ");  
+      System.out.println("Hey there \t BackSlash t is used to add tab spaces   ");        
+      System.out.println("Back Slash r  \r Is Used To Move The Cursor On To The Starting Location Of the Current Line  "); // '\r'   carriage retain
+ 
+      System.out.println("BackSpace Character (BackSlash b) \b  "); //b for backspace
+      System.out.println("my favourite book is The Power of Positive thinking \\\\ and zawia  "); // \\single backslash
+      System.out.println("the author of power of positive thinking is \"NORMAN VINCENT PEALE\" "); // \"for double quote
+      System.out.println("zawia was written by \'ASHFAQUE AHMED\'"); // \' for single quote
+
+}
+}
