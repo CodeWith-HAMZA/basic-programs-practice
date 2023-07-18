@@ -1,0 +1,27 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  box-sizing: border-box;
+  padding: 0;margin: 0;
+  scroll-behavior: smooth;
+}
+
+ .bgDiv::before{
+  content: '';
+  position: absolute;
+  inset: 0;  
+  background: url('https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b') no-repeat center center/cover; 
+  border-radius: 0.4rem;
+   
+ }
+ .bgDiv::after{
+  content: '';
+  position: absolute;
+  inset:0 ;  
+  opacity: 0.7;
+  background: linear-gradient(0deg, rgba(0,5,5,1) 0%, rgba(39,205,255,0.7931034482758621) 100%);
+  border-radius: 0.4rem;
+ }
